@@ -6,6 +6,6 @@ package h01;
 public class HalloRocDev {
 
     public static void main(String[] args) {
-        System.out.println("Nieuwe text 123!");
+        System.out.println("wijziging in git");
     }
 }
