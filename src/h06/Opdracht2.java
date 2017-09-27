@@ -4,7 +4,7 @@ import java.applet.*;
 
 public class Opdracht2 extends Applet {
     int seconden,uur, dag, jaar;
-    
+
     public void init(){
         seconden = 60;
         uur = seconden*60;

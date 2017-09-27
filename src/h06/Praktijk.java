@@ -3,7 +3,7 @@ import java.awt.*;
 import java.applet.*;
 
 public class Praktijk extends Applet{
-    double a,b,c,gemiddelde,resultaat;
+    double a,b,c, gemiddelde, resultaat;
 
     public void init(){
         a=5.9;
