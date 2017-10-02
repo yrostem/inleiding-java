@@ -6,12 +6,12 @@ public class o_02 extends Applet {
     TextField tekstvak;
     Button knop;
     int invoer;
-    int uitslag;
-    int laagste;
+    String tekst;
     public void init() {
         setSize(500,400);
 
-        tekstvak = new TextField(10);
+
+        tekstvak = new TextField(1);
         knop = new Button("Bereken");
 
         add(tekstvak);
@@ -28,21 +28,57 @@ public class o_02 extends Applet {
         public void actionPerformed(ActionEvent e) {
             Integer.parseInt(String.valueOf(invoer));
             invoer = Integer.parseInt(tekstvak.getText());
-            if (invoer > uitslag ) {
-                uitslag = invoer;
-                repaint();
+            int maand = invoer;
+            switch (maand){
+                case 1:
+                     tekst = "Januari en bestaat uit 31 dagen.";
+                    break;
+                case 2:
+                    tekst = "Februari en bestaat uit 28 of 29 dagen.";
+                    break;
+                case 3:
+                     tekst = "Maart en bestaat uit 31 dagen.";
+                    break;
+                case 4:
+                     tekst = "April en bestaat uit 30 dagen.";
+                    break;
+                case 5:
+                     tekst = "Mei en bestaat uit 31 dagen.";
+                    break;
+                case 6:
+                     tekst = "Juni en bestaat uit 30 dagen.";
+                    break;
+                case 7:
+                     tekst = "Juli en bestaat uit 31 dagen.";
+                    break;
+                case 8:
+                     tekst = "Augustus en bestaat uit 31 dagen.";
+                    break;
+                case 9:
+                     tekst = "September en bestaat uit 30 dagen.";
+                    break;
+                case 10:
+                     tekst = "Oktober en bestaat uit 31 dagen.";
+                    break;
+                case 11:
+                     tekst = "November en bestaat uit 30 dagen.";
+                    break;
+                case 12:
+                     tekst = "December en bestaat uit 31 dagen.";
+                    break;
+                default:
+                    tekst = "Ongeldig";
+                    break;
+
             }
-            if(invoer < uitslag){
-                laagste = invoer;
-                repaint();
-            }
+            repaint();
         }
     }
 
     @Override
     public void paint(Graphics g) {
-        g.drawString("Hoogste getal tot nu toe:" + uitslag, 100, 100);
-        g.drawString("Laagste getal tot nu toe:" + laagste, 100, 150);
+        g.drawString("Dit is de maand:" + tekst, 100, 100);
+
     }
 
 }
