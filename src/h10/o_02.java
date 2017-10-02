@@ -78,7 +78,6 @@ public class o_02 extends Applet {
     @Override
     public void paint(Graphics g) {
         g.drawString("Dit is de maand:" + tekst, 100, 100);
-
     }
 
 }
