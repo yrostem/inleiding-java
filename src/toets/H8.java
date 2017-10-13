@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class H8 extends Applet {
-    Button toon;
-    TextField valerieTxtVeld, jeroenTxtVeld, hansTxtVeld;
-    int valerieHeight, jeroenHeight, hansHeight;
+    private Button toon;
+    private TextField valerieTxtVeld, jeroenTxtVeld, hansTxtVeld;
+    private int valerieHeight, jeroenHeight, hansHeight;
 
     @Override
     public void init() {
