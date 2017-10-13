@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class h10 extends Applet{
+public class H10 extends Applet{
 
     private int x=20, y=50;
     private TextField tv1 = new TextField(10);
