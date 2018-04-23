@@ -2,15 +2,15 @@ package h12;
 
 import java.applet.Applet;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Opdr3 extends Applet {
 
     int values[] = new int[5];
     TextField textFields[] = new TextField[5];
-    boolean start;
+    boolean start ;
 
     public void init () {
 

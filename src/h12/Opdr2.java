@@ -1,20 +1,28 @@
 package h12;
-import java.awt.*;
+
 import java.applet.Applet;
+import java.awt.*;
+import java.awt.event.*;
 
-public class Opdr2 extends Applet{
-    public void init () {
+public class Opdr2 extends Applet {
 
-       for (int i = 0; i < 25; i++){
-           Button knop = new Button("knop " + (i + 1));
-           add(knop);
-       }
+    Button knop[];
+
+
+    public void init() {
+        knop = new Button [25];
+
+        for (int teller = 0; teller < knop.length; teller ++) {
+            Button b = new Button();
+            knop[teller] = b;
+            add(b);
+        }
     }
 
-    @Override
-    public void paint(Graphics g) {
-
-    }
+    //public void paint(Graphics g) {
+    //for (int teller = 0; teller < gemiddelde.length; teller ++) {
+    //g.drawString("" + gemiddelde[teller], 50, 20 * teller + 20);
+    //g.drawString("gemiddelde:" + uitkomst[teller], 90, 20* teller + 20);
+    //}
+    //}
 }
-
-
